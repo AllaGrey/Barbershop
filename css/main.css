@@ -529,10 +529,10 @@ ol {
 }
 
 .benefits__item {
-  width: 193px;
+  width: 115px;
   height: 133px;
   background-color: #F7F7F7;
-  padding: 20px 35px;
+  padding: 15px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -544,14 +544,25 @@ ol {
 .benefits__item:nth-child(2n) {
   margin-top: 35px;
 }
+@media screen and (min-width: 480px) {
+  .benefits__item {
+    width: 193px;
+    padding: 20px 35px;
+  }
+}
 
 .benefits__quantity {
   font-weight: 700;
-  font-size: 42px;
+  font-size: 35px;
   line-height: 1.36;
   letter-spacing: 0.05em;
   color: var(--dark-brand-color);
   position: relative;
+}
+@media screen and (min-width: 480px) {
+  .benefits__quantity {
+    font-size: 42px;
+  }
 }
 
 .benefits__quantity--plus {
