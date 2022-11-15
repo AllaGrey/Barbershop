@@ -1,0 +1,40 @@
+.section-hero {
+    background-image: var(--bg-gradient), url(../images/hero-mob-1x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 209px;
+    padding-bottom: 209px;
+
+    @include retuna {
+        background-image: var(--bg-gradient), url(../images/hero-mob-2x.png);
+    }
+}
+
+
+.hero__info {
+    @include text-about;
+    color: var(--light-brand-color);
+    &::before {
+        background-color: var(--light-brand-color);
+    }
+    margin-bottom: 20px;
+}
+
+.hero__title {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: var(--white-color);
+    margin-right: auto;
+    margin-bottom: 20px;
+
+}
+
+.hero__text {
+    @include text;
+    color: #9DA4BD;;
+    max-width: 336px;
+}

@@ -1,0 +1,61 @@
+.header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: absolute;
+    width: 100%;
+    
+}
+
+.header-box {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo {
+
+}
+
+.logo__link {
+
+}
+
+.mob-menu-btn {
+    border: transparent;
+    background-color: transparent;
+    margin-left: auto;
+
+    
+
+    
+}
+
+.mob-menu-btn__icon {
+    fill: var(--white-color);
+    transition-timing-function: var(--cubic);
+    transition-duration: var(--period);
+    
+    .mob-menu-btn:hover &,
+    .mob-menu-btn:focus & {
+        fill: var(--brand-color);
+    }
+}
+
+
+.nav__list {
+    display: none;
+}
+
+.list {}
+
+.nav__item {}
+
+.contacts {
+    display: none;
+}
+
+.booking-button {
+    display: none;
+}

@@ -1,0 +1,110 @@
+.section-booking {
+    background-color: #191C26;
+}
+
+.booking-form {
+    
+    width: 100%;
+}
+
+.booking-form__title {
+    font-family: 'Raleway';
+    font-size: 42px;
+    line-height: 1.67;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: var(--white-color);
+    margin-bottom: 44px;
+}
+
+
+.booking-form_list {}
+
+.booking-form__item {
+    
+    &:not(:last-child) {
+        margin-bottom: 44px;
+        display: flex;
+        border-bottom: 1px solid var(--light-brand-color);
+
+        transition-timing-function: var(--cubic);
+        transition-duration: var(--period);
+            
+            &:hover,
+            &:focus {
+                border-bottom: 1px solid var(--white-color);
+                }
+
+    }
+}
+
+.booking-form__label {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: var(--light-brand-color);
+    cursor: pointer;
+    
+    &:last-child {
+        width: 100%;
+    }
+
+}
+    
+.booking-form__input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: var(--light-brand-color);
+}
+
+.booking-form__massage {
+    resize: none;
+    width: inherit;
+    height: 76px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--light-brand-color);
+
+        &::placeholder {
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 1.36;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--light-brand-color);
+            cursor: pointer;
+    }
+}
+
+.booking-form__button {
+    display: block;
+    border-radius: 25px;
+    border: 1px solid var(--brand-color);
+    background-color: transparent;
+    width: 160px;
+    height: 40px;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    text-align: center;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin: 0 auto;
+
+    transition-timing-function: var(--cubic);
+    transition-duration: var(--period);
+        
+        &:hover,
+        &:focus {
+            background-color: var(--brand-color);
+            color: var(--white-color);
+            }
+}

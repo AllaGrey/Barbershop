@@ -1,0 +1,23 @@
+.container {
+    // width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+
+
+    @include mobile {
+        max-width: 480px;
+    }
+
+    // @include tablet {
+    //     width: 768px;
+    // }
+
+    // @include desktop {
+    //     width: 1200px;
+    // }
+}
+
+.section {
+    padding: 84px 0;
+}

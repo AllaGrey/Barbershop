@@ -1,0 +1,72 @@
+
+
+.about.about__list {
+    display: none;
+}
+
+.about__item {
+    display: none;
+}
+
+
+.about__info {
+
+    @include text-about;
+        color: var(--dark-brand-color);
+        
+        &::before {
+            background-color: var(--dark-brand-color);
+        }
+    margin-bottom: 20px;
+}
+
+
+.about__title {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+    color: var(--dark-brand-color);
+    max-width: 306px;
+    margin-bottom: 20px;
+}
+
+.about__text {
+    @include text {
+        color: var(--dark-second-color);
+        margin-bottom: 20px;
+    }
+}
+
+.about__text-description {
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: var(--dark-second-color);
+    max-width: 418px;
+    margin-bottom: 40px;
+}
+
+.about__button {
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--dark-brand-color);
+    border: 1px solid var(--brand-color);
+    border-radius: 25px;
+    padding: 12px 20px;
+    background-color: transparent;
+
+    transition-timing-function: var(--cubic);
+    transition-duration: var(--period);
+        
+        &:hover,
+        &:focus {
+            background-color: var(--brand-color);
+            color: var(--white-color);
+            }
+}

@@ -1,0 +1,92 @@
+.section-contacts {
+    background-color: #191C26;
+    background-image: var(--bg-gradient), url(../images/contacts-mob-1x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include retuna {
+        background-image: var(--bg-gradient), url(../images/contacts-mob-2x.png);
+    }
+}
+
+.contacts-box {
+
+}
+
+.contacts__title {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.67;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: var(--white-color);   
+    margin-bottom: 40px; 
+}
+
+.contacts__address {
+    margin-bottom: 20px;
+}
+
+.contacts__link__map {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
+
+    transition-timing-function: var(--cubic);
+    transition-duration: var(--period);
+    
+        &:hover,
+        &:focus {
+            color: var(--brand-color);
+        }
+}
+
+.contacts__list {
+    margin-bottom: 44px;
+}
+
+.contacts__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.contacts__link {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
+
+    transition-timing-function: var(--cubic);
+    transition-duration: var(--period);
+            
+        &:hover,
+        &:focus {
+            color: var(--brand-color);
+                }
+}
+
+.contacts__schedule {
+    @include text-about;
+        color: var(--white-color);
+    
+        &::before {
+            background-color: var(--white-color);
+        }
+    
+        margin-bottom: 20px;
+}
+
+.contacts__schedule--hours {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
+}

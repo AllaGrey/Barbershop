@@ -1,0 +1,33 @@
+@import './base/common';
+@import './base/reset';
+@import './utils/vars';
+@import './utils/mixins';
+@import './base/container';
+@import './base/is-hidden';
+
+@import './components/logo';
+@import './base/visually-hidden';
+
+@import './components/header';
+@import './components/backdrop';
+@import './components/mob-menu';
+
+@import './components/section-soc-networks';
+
+@import './components/hero';
+
+@import './components/about';
+
+@import './components/prices';
+
+@import './components/benefits';
+
+@import './components/barbers';
+
+@import './components/gallery';
+
+@import './components/booking-section';
+
+@import './components/contacts';
+
+@import './components/footer';

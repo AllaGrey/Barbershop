@@ -1,0 +1,85 @@
+.section-barbers {
+    background-color: #F7F7F7;
+}
+
+.barbers {}
+
+.container {}
+
+.barbers__info {
+    @include text-about;
+        color: var(--dark-brand-color);
+    
+        &::before {
+            background-color: var(--dark-brand-color);
+        }
+    
+        margin-bottom: 20px;
+}
+
+.barbers__title {
+    font-family: 'Raleway';
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: var(--dark-brand-color);
+    margin-bottom: 44px;
+}
+
+.barbers__list {}
+
+
+.barbers__item {
+    margin-bottom: 64px;
+}
+
+.barbers__img {
+    margin-bottom: 30px;
+}
+
+.barbers__name {
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--dark-brand-color);
+    margin-bottom: 8px;
+}
+
+.barbers__description {
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--brand-color);
+    margin-bottom: 30px;
+}
+
+.soc-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.soc-links__item {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white-color);
+
+    transition-timing-function: var(--cubic);
+    transition-duration: var(--period);
+        
+        &:hover,
+        &:focus {
+                fill: var(--brand-color);
+            }
+    
+}
+
+.soc-links__icon {
+    
+}

@@ -1,0 +1,24 @@
+.section-gallery {}
+
+.gallery {}
+
+.gallery__info {
+    @include text-about;
+        color: var(--dark-brand-color);
+    
+        &::before {
+            background-color: var(--dark-brand-color);
+        }
+    
+        margin-bottom: 71px;
+}
+
+.gallery__title {}
+
+.gallery__list {}
+
+.gallery__item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.gallery__img {}

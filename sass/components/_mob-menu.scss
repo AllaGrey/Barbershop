@@ -1,0 +1,110 @@
+
+
+
+.mob-menu-backdrop.is-hidden .mob-menu-container {
+    transform: translate(0%, 0%) scale(0, 0);
+}
+
+.mob-menu-backdrop {}
+
+.is-hidden {}
+
+.mob-menu-container {
+    width: 70vw;
+    height: 100vh;
+    background-color: var(--white-color);
+    padding: 118px 40px;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    overflow-y: auto;
+
+
+}
+
+.btn-close {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 48px;
+    right: 31px;
+}
+
+.mob-menu__icon-close {}
+
+.mob-menu__list,
+.mob-menu__contacts {
+    margin-bottom: 64px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.39;
+    letter-spacing: 0.1em;
+    color: var(--dark-brand-color);
+}
+
+.mob-menu__link,
+.mob-menu__contacts,
+.btn-close,
+.soc-networks__link--mob {
+    transition-timing-function: var(--cubic);
+    transition-duration: var(--period);
+    
+    &:hover,
+    &:focus {
+        color: var(--brand-color);
+        fill: var(--brand-color);
+    }
+}
+
+.mob-menu__item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+
+
+.mob-menu__contacts {
+    margin-bottom: 24px;
+}
+
+.mob-menu__booking-button {
+    display: block;
+    margin-top: 24px;
+    margin-bottom: 64px;
+    width: 194px;
+    height: 40px;
+    border: 1px solid var(--brand-color);
+    background-color: transparent;
+    border-radius: 25px;
+    transition-timing-function: var(--cubic);
+    transition-duration: var(--period);
+    
+    &:hover,
+    &:focus {
+        color: var(--white-color);
+        background-color: var(--brand-color);
+    }
+}
+
+.soc-networks__list--mob {
+    position: relative;
+    padding-left: 80px;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 1px;
+        background-color: var(--dark-brand-color);
+        margin-right: 40px;
+        left: 0;
+        top: 9px;
+        
+    }
+}
+
+.soc-networks__item--mob:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.soc-networks__link--mob {}
