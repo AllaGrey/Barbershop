@@ -31,13 +31,54 @@
     letter-spacing: 0.05em;
     color: var(--white-color);
     margin-bottom: 44px;
+
+    @include tablet {
+        font-size: 42px;
+    }
+}
+
+.prices__container {
+    padding: 30px 20px;
+    margin-bottom: 44px;
+    
+    @media screen and (max-width: 1199px) {
+        background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+    }
+
+    @include desktop {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        &:first-child {
+                background-color: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+            }
+        
+        
+            &:last-child {
+                background-color: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+            }
+
+    }
 }
 
 .prices__list {
-    padding: 30px 20px;
-    margin-bottom: 44px;
-    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+    @media screen and (max-width: 1199px) {
+        &:first-child {
+            margin-bottom: 20px;
+        }
+    }
 
+    @include desktop {
+        width: 570px;
+        &:first-child {
+            background-color: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+        }
+        
+        
+        &:last-child {
+            background-color: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%); 
+        }
+    }
 }
 
 

@@ -1,23 +1,33 @@
 .container {
-    // width: 100%;
+    width: 100%;
     padding-left: 30px;
     padding-right: 30px;
     margin: 0 auto;
 
 
     @include mobile {
-        max-width: 480px;
+        width: 480px;
     }
 
-    // @include tablet {
-    //     width: 768px;
-    // }
+    @include tablet {
+        width: 768px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
-    // @include desktop {
-    //     width: 1200px;
-    // }
+    @include desktop {
+        width: 1200px;
+    }
 }
 
 .section {
     padding: 84px 0;
+
+    @include tablet {
+        padding: 100px 0;
+    }
+
+    @include desktop {
+        padding: 120px 0;
+    }
 }

@@ -3,13 +3,12 @@
     padding-bottom: 40px;
     position: absolute;
     width: 100%;
-    
 }
 
 .header-box {
 
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     
 }
@@ -27,7 +26,9 @@
     background-color: transparent;
     margin-left: auto;
 
-    
+        @include tablet {
+                display: none;
+            }
 
     
 }
@@ -41,21 +42,83 @@
     .mob-menu-btn:focus & {
         fill: var(--brand-color);
     }
+
+    @include tablet {
+            display: none;
+        }
 }
 
+.nav {
+    padding-top: 12px;
+}
 
 .nav__list {
-    display: none;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @include tablet {
+        display: flex;
+    }
 }
 
-.list {}
+.nav__item {
+    @include tablet {
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+}
 
-.nav__item {}
+.nav__link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    
+    color: var(--white-color);
+}
+
+.header-contact-box {
+    @include tablet {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
 
 .contacts {
-    display: none;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @include tablet {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: 0.1em;
+        color: var(--white-color);
+        
+    }
 }
 
 .booking-button {
-    display: none;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @include tablet {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        color: var(--white-color);
+        padding: 12px 20px;
+        border: 1px solid var(--brand-color);
+        background-color: transparent;
+        border-radius: 25px;
+        min-width: 164px;
+        margin-bottom: 20px;
+    }
 }

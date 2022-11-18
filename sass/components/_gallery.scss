@@ -15,10 +15,30 @@
 
 .gallery__title {}
 
-.gallery__list {}
+.gallery__list {
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        
+    }
 
-.gallery__item:not(:last-child) {
+    @include desktop {
+        flex-wrap: nowrap;
+    }
+}
+
+.gallery__item {
+    &:not(:last-child) {
     margin-bottom: 30px;
 }
 
-.gallery__img {}
+    @include tablet {
+        width: calc(100% - 30px) / 2;
+    }
+
+    @include desktop {
+        width: calc(100% - 90px) / 4;
+    }
+}

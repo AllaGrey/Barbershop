@@ -6,13 +6,20 @@
 }
 
 .footer-box {
-    
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
 
 .footer__text {
-    position: absolute;
-    left: 31px;
-    top: 79px;
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        left: 31px;
+        top: 79px;
+    }
 }
 
 .footer__list {

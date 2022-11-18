@@ -1,9 +1,18 @@
 .section-benefits {}
 
 
-.benefits {}
+.benefits {
+    @include desktop {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
 
-
+.benefits__description-box {
+    @include desktop {
+        margin-left: 130px;
+    }
+}
 
 .benefits__description {
     @include text-about;
@@ -23,6 +32,9 @@
     letter-spacing: 0.05em;
     color: var(--dark-brand-color);
     margin-bottom: 20px;
+    @include tablet {
+        max-width: 450px;
+    }
 }
 
 
@@ -33,13 +45,17 @@
     letter-spacing: 0.02em;
     color: var(--dark-second-color);
     margin-bottom: 44px;
+    @include tablet {
+        max-width: 500px;
+    }
 }
 
 .benefits__list {
     display: flex;
     flex-wrap: wrap;
-    
     column-gap: 30px;
+    max-width: 460px;
+    margin-left: auto;
 
     }
 

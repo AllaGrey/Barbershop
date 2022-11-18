@@ -1,5 +1,27 @@
+.booking-contacts--desktop {
+    @include desktop {
+        display: flex;
+        justify-content: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        max-width: 1200px;
+        margin: 0 auto;
+        
+    }
+}
+
 .section-booking {
     background-color: #191C26;
+    @include desktop {
+        width: calc(50% - 15px);
+    }
+}
+
+.booking__container {
+    @include desktop {
+        width: calc(600px - 30px);
+        
+    }
 }
 
 .booking-form {
@@ -15,26 +37,39 @@
     letter-spacing: 0.05em;
     color: var(--white-color);
     margin-bottom: 44px;
+
+    @include tablet {
+        text-align: left;
+    }
 }
 
 
-.booking-form_list {}
+.booking-form__list {
+    @include tablet {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    
+            }
+}
 
 .booking-form__item {
-    
-    &:not(:last-child) {
-        margin-bottom: 44px;
+    width: 100%;
         display: flex;
         border-bottom: 1px solid var(--light-brand-color);
-
+        margin-bottom: 44px;
         transition-timing-function: var(--cubic);
         transition-duration: var(--period);
-            
-            &:hover,
-            &:focus {
-                border-bottom: 1px solid var(--white-color);
-                }
+    
+        &:hover,
+        &:focus {
+            border-bottom: 1px solid var(--white-color);
+        }
 
+    
+    @include tablet {
+
+        
     }
 }
 
@@ -47,10 +82,6 @@
 
     color: var(--light-brand-color);
     cursor: pointer;
-    
-    &:last-child {
-        width: 100%;
-    }
 
 }
     
@@ -70,6 +101,7 @@
     outline: none;
     background-color: transparent;
     color: var(--light-brand-color);
+    border-bottom: 1px solid var(--light-brand-color);
 
         &::placeholder {
             font-weight: 600;
@@ -98,6 +130,7 @@
     text-transform: uppercase;
     color: var(--white-color);
     margin: 0 auto;
+    margin-top: 44px;
 
     transition-timing-function: var(--cubic);
     transition-duration: var(--period);
@@ -107,4 +140,7 @@
             background-color: var(--brand-color);
             color: var(--white-color);
             }
+    @include tablet {
+        margin-left: 0;
+    }
 }

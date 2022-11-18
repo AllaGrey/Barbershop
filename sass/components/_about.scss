@@ -1,11 +1,41 @@
 
+.about {
+    display: flex;
+}
 
-.about.about__list {
+.about__description-container {
+
+}
+
+.about__list {
     display: none;
+
+    @include tablet {
+        display: block;
+    }
+
+    @include desktop {
+        display: flex;
+        
+    }
 }
 
 .about__item {
     display: none;
+    
+    @include tablet {
+        display: block;
+        margin-right: 30px;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    @include desktop {
+
+
+    }
 }
 
 
